@@ -37,22 +37,22 @@ addNumbers = confirm("Include number characters?");
 if(addLowerCase) {
   master = master.concat(lowerCase); // Adds set of characters to 'master' list
   var gLowerCase = lowerCase.charAt(Math.floor(Math.random() * lowerCase.length)); // Selects a character from preferred set to guarantee inclusion of set in generated password
-  setCount = setCount + 1; // Increases count of preferred sets
+  setCount++; // Increases count of preferred sets
   } else {gLowerCase = "";}
 if(addUpperCase) {
    master = master.concat(upperCase);
    var gUpperCase = upperCase.charAt(Math.floor(Math.random() * upperCase.length));
-   setCount = setCount + 1;
+   setCount++;
   } else {gUpperCase = "";}
 if(addSpecial) {
   master = master.concat(special);
   var gSpecialCase = special.charAt(Math.floor(Math.random() * special.length));
-  setCount = setCount + 1;
+  setCount++;
   }else {gSpecialCase = "";}
 if(addNumbers) {
   master = master.concat(numbers);
   var gNumbers = numbers.charAt(Math.floor(Math.random() * numbers.length));
-  setCount = setCount + 1;
+  setCount++;
   }else {gNumbers = "";}
 
   // Randomly picks charcters from 'master' list
