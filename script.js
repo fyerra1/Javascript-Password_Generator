@@ -1,3 +1,11 @@
+// Password characters
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var upperCase = lowerCase.toUpperCase();
+var special = "!\"#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+var numbers = "1234567890";
+var master = "";
+var setCount = 0;
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -11,14 +19,6 @@ function writePassword() {
 
   passwordText.value = password;
 }
-
-// Password characters
-var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-var upperCase = lowerCase.toUpperCase();
-var special = "!\"#$%&'()*+,-./:;<=>?@[]^_`{|}~";
-var numbers = "1234567890";
-var master = "";
-var setCount = 0;
 
 // Generate random password
 function generatePassword() {
@@ -62,10 +62,7 @@ for (var i = 0; i < (passwordLength - setCount) ; i++) {
   }
   // Creates final password
 var result = gLowerCase + gUpperCase + gSpecialCase + gNumbers + remainingChar; 
-  console.log(result.length);
-
-
-console.log(master);
+ 
 return result;
 }
 
